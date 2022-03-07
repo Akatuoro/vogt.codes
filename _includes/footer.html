@@ -3,30 +3,25 @@
 
 	<div class="wrapper">
 
-		<div class="footer-col-wrapper">
-			<div class="footer-col footer-col-1">
-				<ul class="contact-list">
-					<li style="margin-bottom: 0.5rem;">
-						<img style="border-radius: 50%; width: 10rem;" src="/images/me.jpg">
-					</li>
-					<li class="p-name">
+		<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(21rem, auto)); gap: 1rem;">
+			<div style="display: grid; grid-template-columns: auto 1fr; gap: 1rem;">
+				<img style="border-radius: 50%; max-width: 10rem;" src="/images/me.jpg">
+				<div>
+					<p class="p-name">
 						{%- if site.author -%}
 						{{ site.author | escape }}
 						{%- else -%}
 						{{ site.title | escape }}
 						{%- endif -%}
-					</li>
+					</p>
 					{%- if site.email -%}
-					<li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+					<p><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></p>
 					{%- endif -%}
-				</ul>
+					{%- include social.html -%}
+				</div>
 			</div>
 
-			<div class="footer-col footer-col-2">
-				{%- include social.html -%}
-			</div>
-
-			<div class="footer-col footer-col-3">
+			<div style="grid-column: span 1;">
 				<p>{{- site.description | escape -}}</p>
 			</div>
 		</div>
