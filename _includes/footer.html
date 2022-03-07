@@ -3,20 +3,22 @@
 
 	<div class="wrapper">
 
-		<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(21rem, auto)); gap: 1rem;">
-			<div style="display: grid; grid-template-columns: auto 1fr; gap: 1rem;">
+		<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(22rem, auto)); gap: 1rem;">
+			<div style="display: grid; grid-template-columns: auto 1fr; gap: 2rem;">
 				<img style="border-radius: 50%; max-width: 10rem;" src="/images/me.jpg">
 				<div>
-					<p class="p-name">
-						{%- if site.author -%}
-						{{ site.author | escape }}
-						{%- else -%}
-						{{ site.title | escape }}
+					<ul class="contact-list">
+						<li class="p-name">
+							{%- if site.author -%}
+							{{ site.author | escape }}
+							{%- else -%}
+							{{ site.title | escape }}
+							{%- endif -%}
+						</li>
+						{%- if site.email -%}
+						<li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
 						{%- endif -%}
-					</p>
-					{%- if site.email -%}
-					<p><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></p>
-					{%- endif -%}
+					</ul>
 					{%- include social.html -%}
 				</div>
 			</div>
