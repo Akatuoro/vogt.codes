@@ -11,7 +11,7 @@ A classic snake game with multiplayer using WebRTC.
 It was inspired by [Proxx](https://github.com/GoogleChromeLabs/proxx) as a classic game built with modern web technologies. Initially designed to be minimal in size with singleplayer, this has extended when bringing in a multiplayer that combines the discrete step nature of the snake game with continous animation and latency compensation.
 
 
-Snake has always been a fond game of mine since the days of feature phones. My first implementation of Snake (in Java) was during a winter vacation in 2008. It was later broken due to a lack of version control - git was not yet as popular. Since then, I've implemented simple versions multiple times with [snakey.io](https://snakey.io) being the version I can now enjoy playing anywhere and anytime.
+Snake has always been a fond game of mine since the days of feature phones. My first implementation of Snake (in Java) was during a winter vacation in 2008. It was later broken due to a lack of version control - git was not yet as popular. Since then, I've implemented simple versions multiple times with [snakey.io](https://snakey.io) being the version I can now enjoy playing anywhere, anytime.
 
 
 ![Two snakes moving towards an apple in the center](/images/snake-banner.png)
