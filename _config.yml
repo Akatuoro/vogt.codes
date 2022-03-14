@@ -22,9 +22,9 @@ title: vogt.codes
 author: Johannes Vogt
 email: johannes@vogt.codes
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Web development meets machine learning.
+  Come along to interactively explore generative networks with Tensorflow.js
+  and test the limits of the current web platform.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
