@@ -18,7 +18,7 @@ Some highlights include:
 - [Icon GAN](/icon-gan/)
 - [snakey.io](/snakey.io/)
 
-Since 2016 I've been working at SAP, developing innovative technologies like indoor navigation and core cloud services. I like to keep the big picture in mind and dive deep into complex topics together with my colleagues.
+Since 2016 I've been working at [SAP](https://sap.com/), developing innovative technologies like indoor navigation and core cloud services. I like to keep the big picture in mind and dive deep into complex topics together with my colleagues.
 
 
 
