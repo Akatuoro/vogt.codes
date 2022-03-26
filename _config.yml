@@ -26,7 +26,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Come along to interactively explore generative networks with Tensorflow.js
   and test the limits of the current web platform.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://vogt.codes" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 github_username:  Akatuoro
 

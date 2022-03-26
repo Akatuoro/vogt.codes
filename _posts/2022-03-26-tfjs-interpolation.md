@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "GAN interpolations in Tensorflow.js: The Basics"
-date:   2022-03-25 19:00:00 +0100
+date:   2022-03-26 21:00:00 +0100
 categories: icon-gan tfjs
 ---
 
@@ -32,7 +32,7 @@ In StyleGAN 2, the latent space consists of one `w`x`h` matrix and multiple vect
 
 ## Loading the model
 
-To generate images, we need to load a model. In tfjs, we can do this using:
+To generate images, we need to load a model. In [Tensorflow.js](https://js.tensorflow.org/api/latest/), we can do this using:
 ```js
 const modelUrl = "https://raw.githubusercontent.com/Akatuoro/nn-models/master/icons-64-web/model.json";
 const model = await tf.loadGraphModel(modelUrl);
