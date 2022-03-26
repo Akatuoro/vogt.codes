@@ -8,7 +8,7 @@ categories: icon-gan tfjs
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-So you've trained your model and now it's time to inspect the results. A typical method - or at least what I did a lot - is generating random images. But surely there are better options to explore your creation. One such way is interpolation. We can take two images and observe how the model behaves while transitioning between them.
+So you've trained your machine learning model and now it's time to inspect the results. A typical method - or at least what I did a lot - is generating random images. But surely there are better options to explore your creation. One such way is interpolation. We can take two images and observe how the model behaves while transitioning between them.
 
 <p align="center">
 <img src="/images/1d-interpolation.png" alt="Image of interpolation on Icon GAN model">
@@ -104,7 +104,7 @@ tf.split(tensor, n).forEach(d => {
 
 ## Interpolation
 
-Now that we have two images and tested that basic image generation works, we can start with interpolating.
+Now that we have two images and tested that basic image generation works, we can start interpolating.
 We take the inputs of our images and do a linear interpolation with $$n$$ inputs $$Z_t$$, including our base inputs:
 
 
