@@ -108,7 +108,7 @@ Now that we have two images and tested that basic image generation works, we can
 We take the inputs of our images and do a linear interpolation with $$n$$ inputs $$Z_t$$, including our base inputs:
 
 
-$$Z_{t=0..n} = A + (B - A) * \frac{t}{n}$$
+$$Z_{t=0..n-1} = A + (B - A) * \frac{t}{n-1}$$
 
 
 <div class="image-grid">
@@ -131,8 +131,8 @@ const n = 9;
 const input = inputA.map((t, i) => {
 	const combined = [];
 	// calculate all Z_t for the current input tensor index
-	for (let j = 0; j <= n; j++) {
-		combined.push(t.add(v[i].mul(j / n)));
+	for (let j = 0; j < n; j++) {
+		combined.push(t.add(v[i].mul(j / (n - 1))));
 	}
 	// concatenate Z_t for batch processing
 	return tf.concat(combined);

@@ -29,4 +29,4 @@ The game uses spritesheets generated when loading the game. This ensures low dow
 
 Currently multiplayer is supported by exchanging WebRTC ICE candidates ([Signaling](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API/Connectivity#signaling)) in a lobby managed with [socket.io](https://socket.io/).
 
-Once the game starts, state and actions are sent over WebRTC with one player acting as the host. The game state is simulated / predicted on client site based on the already known player actions - or lack thereof. If the client later gets updated information from the host, these changes are rolled back and the new changes are applied.
+Once the game starts, state and actions are sent over WebRTC with one player acting as the host. The game state is simulated / predicted on client side based on the already known player actions - or lack thereof. If the client later gets updated information from the host, these changes are rolled back and the new changes are applied.
